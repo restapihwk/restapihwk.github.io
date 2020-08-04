@@ -4,6 +4,6 @@ function verifylogin() {
 
 	let verify = user.length > 5 && pass.length > 5
 	if(verify == true) {
-		console.log('lox')
+		
 	}
 }
