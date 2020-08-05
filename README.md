@@ -8,22 +8,22 @@ This is my hwk for aca
 Everything starts With login
   
 My * web application * gets from rest API some info about all countries   
-  * name
-  * area
-  * flag
-  * population
-  * borders
-  * alpha code (e.g ARM)
+  1 name
+  2 area
+  3 flag
+  4 population
+  5 borders
+  6 alpha code (e.g ARM)
   
 **Onclick** The name It will show you more detailed information about choosen country  
->You can Search the countries & add it to favorites as I save info in localStorage it will appear even if you will restart the computer  
->You can delete countries from favorites  
+  * You can Search the countries & add it to favorites as I save info in localStorage it will appear even if you will restart the computer  
+  * You can delete countries from favorites  
 
 ### Mobile Version
 
-  In mobile version You wil have   
-    *responsible table
-    *Short info
-  You won't have   
-    *Favorites
+  In mobile version You will have    
+    * responsible table
+    * Short info
+  You won't have    
+    * Favorites
   
