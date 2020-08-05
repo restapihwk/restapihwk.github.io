@@ -21,6 +21,13 @@
 				if(verify == true) {
 					window.location.replace("https://restapihwk.github.io/countries.html");	
 				}
+				else {
+					
+					document.querySelector('.warn').style.display = "block";
+					document.querySelector('.warn2').style.display = "block";
+					setTimeout(function () {document.querySelector('.warn').style.display = "none";
+					document.querySelector('.warn2').style.display = "none";}, 3000)
+				}
 			}
  		</script>
  		<style>
@@ -51,6 +58,7 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+				position: relative;
 	 		}
 
 
@@ -84,15 +92,58 @@
 				color: rgb(110,205,102);
 			}
 			.register-paragraph {
-			color: #ccc;
-			font-size: 12px;
-			text-align: center;
-		}
+				color: #ccc;
+				font-size: 12px;
+				text-align: center;
+			}
+			.warn-paragraph{
+				color: #666;
+				font-size: 12px;
+				text-align: center;
+			}
+			.warn {
+				display: none;
+				width: 150px;
+				height: 40px;
+				padding: 0 5px;
+				box-sizing: border-box;
+				height: 40px;
+				background: #F0F090;
+				position: absolute;
+				right: -130px;
+			}
+			.warn2 {
+				display: none;
+				width: 150px;
+				height: 40px;
+				padding: 0 5px;
+				box-sizing: border-box;
+				background: #F0F090;
+				position: absolute;
+				right: -130px;
+			}
+			.input-container {
+				position: relative;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
  		</style> 
  		<div class="login-container">
- 		
- 				<input type="text" id="user" placeholder="Username">
- 				<input type="password" id="pass" placeholder="Password">
+ 				<div class="input-container">
+	 				<input type="text" id="user" placeholder="Username">
+	 				<div class="warn">
+	 					<span class="warn-paragraph">Length should be minimum 5 chars</span>
+	 				</div>
+ 				</div>
+ 				<div class="input-container">
+	 				<input type="password" id="pass" placeholder="Password">
+	 				<div class="warn2">
+	 					<span class="warn-paragraph">Length should be minimum 5 chars</span>
+	 				</div>
+	 			</div>
  				<input type="button" value="Login" onclick="verifylogin()">
  				<span class="register-paragraph">Dont have an accaunt ? <a href="">Register now!</a></span>
  		

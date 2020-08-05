@@ -11,11 +11,18 @@
  		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
  	</head>
  	<body>  
- 		<input type="text" oninput="getCountries()" placeholder="Type Country Name">
-
+ 		<nav>
+	 		
+	 		<input type="text" oninput="getCountries()" placeholder="Type Country Name">
+	 		<div class="favList" onclick="favoriteRender()">
+	 			<img src="img/checklist.svg" alt="" width="100%">
+	 		</div>
+ 		</nav>
  		<div class="table-container">
  			<div class="notif">
- 				Click On The <br> Name of Country to <br> See detailed info
+ 				Click On The <br>
+ 				Name of Country to <br>
+ 				See detailed info 
  			</div>
 	 		<table>
 	 			<thead>
@@ -26,6 +33,7 @@
 	 					<th>Population</th>
 	 					<th>Borders</th>
 	 					<th>Alpha Code</th>
+	 					<th>Add to Favorite</th>
 	 				</tr>
 	 			</thead>
 	 			<tbody>
