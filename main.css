@@ -28,6 +28,15 @@ a {
 }
 table {
 	border-collapse: collapse;
+	box-sizing: border-box;
+}
+.table-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-width: 80%;
+	max-width: 80%;
 }
 tr {
 	border:1px solid rgb(110,205,102);
@@ -58,4 +67,36 @@ input {
 	background-color: #F0F0F0;
 	color: #000;
 	padding: 0 20px;
+}
+table tbody tr td:nth-child(1) {
+	cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+	body {
+		width: 100%;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		width: 100%;
+	}
+	.table-container {
+		overflow-x: auto;
+	}
+	 table,thead ,tbody {
+	 	max-width: 300px;
+	 	min-width: 300px;
+	 	width: 300px;
+	 	word-wrap: normal;
+	 	overflow: auto;
+	 }
+	 table thead tr th:nth-child(5),
+	 table thead tr th:nth-child(6),
+	 table tbody tr td:nth-child(5),
+	 table tbody tr td:nth-child(6){
+	 	display: none;
+	 }
+	 table tbody tr td {
+	 	padding: 1%;
+	 }
 }
