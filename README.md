@@ -1,13 +1,13 @@
 # restapihwk.github.io
 homework rest api &amp; login page  
-* If you swith from computer to phone please refresh the page to see normal version *  
+*If you swith from computer to phone please refresh the page to see normal version*  
 
 This is my hwk for aca  
 
 ### I will explain everything  
 Everything starts With login
   
-My * web application * gets from rest API some info about all countries   
+My *web application* gets from rest API some info about all countries   
   1 name
   2 area
   3 flag
@@ -20,10 +20,9 @@ My * web application * gets from rest API some info about all countries
   * You can delete countries from favorites  
 
 ### Mobile Version
-
-  In mobile version You will have    
+  In mobile version You will have   <br/>
     * responsible table
     * Short info
-  You won't have    
+  You won't have    <br/>
     * Favorites
   
