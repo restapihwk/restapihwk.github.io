@@ -8,12 +8,21 @@ setTimeout(function () {
 }, 4000);
 
 let urlEnding = "all"; 
+if(localStorage.getItem("getInp")) {
+  	document.querySelector("input").value = JSON.parse(localStorage.getItem("getInp"));
+}
 function getCountries() {
+
   let input = document.querySelector("input");
+
   //checking if there is input & is it string?
   if (input.value != "" && typeof input.value == "string") {
     urlEnding = "name/" + input.value;
-  } else {
+
+    inpVal = JSON.stringify(input.value);
+  	localStorage.setItem("getInp", inpVal);
+  } 
+  else {
     urlEnding = "all";
   }
   //fetching
