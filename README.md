@@ -8,12 +8,12 @@ This is my hwk for aca
 Everything starts With login
   
 My *web application* gets from rest API some info about all countries   
-  1 name
-  2 area
-  3 flag
-  4 population
-  5 borders
-  6 alpha code (e.g ARM)
+  * name
+  * area
+  * flag
+  * population
+  * borders
+  * alpha code (e.g ARM)
   
 **Onclick** The name It will show you more detailed information about choosen country  
   * You can Search the countries & add it to favorites as I save info in localStorage it will appear even if you will restart the computer  
@@ -21,8 +21,10 @@ My *web application* gets from rest API some info about all countries
 
 ### Mobile Version
   In mobile version You will have   <br/>
+  
     * responsible table
     * Short info
-  You won't have    <br/>
+  You won't have    <br/> 
+  
     * Favorites
   
