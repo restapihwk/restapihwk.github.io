@@ -6,6 +6,25 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(110,205,102,1); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(110,205,102,0.5); 
+}
 input:focus {
 	outline: none;
 }
