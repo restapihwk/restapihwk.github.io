@@ -1,47 +1,41 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
- 	<head>  
- 		<meta charset="utf-8"> 
- 		<title>Countries section | Get info about your favorite countries</title> 
- 		<meta name="description" content="Get info about countries">  
- 		<meta name="author" content="Albert Margaryan"> 
- 		<meta content="width=device-width, initial-scale=1" name="viewport" /> 
- 	
- 		<link rel="stylesheet" href="main.css">
- 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap" rel="stylesheet">
- 	</head>
- 	<body>  
- 		<nav>
-	 		
-	 		<input type="text" oninput="getCountries()" placeholder="Type Country Name">
-	 		<div class="favList" onclick="favoriteRender()">
-	 			<img src="img/checklist.svg" alt="" width="100%">
-	 		</div>
- 		</nav>
- 		<div class="table-container">
- 			<div class="notif">
- 				Click On The <br>
- 				Name of Country to <br>
- 				See detailed info 
- 			</div>
-	 		<table>
-	 			<thead>
-	 				<tr>
-	 					<th>Name</th>
-	 					<th>Area</th>
-	 					<th>Flag</th>
-	 					<th>Population</th>
-	 					<th>Borders</th>
-	 					<th>Alpha Code</th>
-	 					<th>Add to Favorite</th>
-	 				</tr>
-	 			</thead>
-	 			<tbody>
-	 				
-	 			</tbody>
-	 		</table>
- 		</div>
- 		
- 		<script src="index.js"></script>
- 	</body>
+<head>
+  <meta charset="utf-8">
+  <title>Countries section | Get info about your favorite countries</title>
+  <meta name="description" content="Get info about countries">
+  <meta name="author" content="Albert Margaryan">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <input type="text" oninput="getCountries()" placeholder="Type Country Name">
+    <div class="favList" onclick="favoriteRender()"><img src="img/checklist.svg" alt="checklist" width="100%"></div>
+  </nav>
+  <div class="table-container">
+    <div class="notif">
+      Click On The<br>
+      Name of Country to<br>
+      See detailed info
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Area</th>
+          <th>Flag</th>
+          <th>Population</th>
+          <th>Borders</th>
+          <th>Alpha Code</th>
+          <th>Add to Favorite</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <script src="index.js"></script>
+</body>
 </html>

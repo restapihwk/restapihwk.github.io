@@ -7,7 +7,7 @@ body {
 	justify-content: center;
 }
 input:focus {
-	 outline: none;
+	outline: none;
 }
 input[type="button"] {
 	cursor: pointer;
@@ -24,7 +24,6 @@ a {
 	color: #ccc;
 	font-size: 12px;
 	text-align: center;
-
 }
 table {
 	margin: 130px 0;
@@ -42,15 +41,14 @@ table {
 }
 tr {
 	border:1px solid rgb(110,205,102);
-
 }
 th {
 	padding: 10px;
 }
 table tbody tr:nth-child(odd) {
- 	background: #F0F0F0;
+	background: #F0F0F0;
 	border:1px solid rgb(110,205,102);
- 	color: #000;
+	color: #000;
 }
 td {
 	padding: 10px;
@@ -59,7 +57,6 @@ input {
 	width: 80%;
 	height: 40px;
 	border: 1px rgb(110,205,102);
-	
 	box-sizing: border-box;
 	margin: 20px 0;
 	border: 1px solid rgba(110,205,102,1);
@@ -79,7 +76,6 @@ table tbody tr td:nth-child(1), td:nth-child(7) {
 	width: 200px;
 	height: 100px;
 	clip-path: polygon(0% 0%, 75% 0, 75% 30%, 100% 54%, 75% 70%, 75% 100%, 0 100%);
-	
 	position: absolute;
 	top: 150px;
 	left: -100px;
@@ -104,113 +100,92 @@ nav {
 	box-shadow: 0px 0px 30px 5px #000;
 }
 @media screen and (max-width: 480px) {
-	/*body {
-		width: 100%;
-	}
-	table {
-		border-collapse: collapse;
-		border-spacing: 0;
-		width: 100%;
+	body {
+		display: flex;
 	}
 	.table-container {
-		overflow-x: auto;
+		min-width: 85%;
+		max-width: 85%;
 	}
-	 table,thead ,tbody {
-	 	max-width: 300px;
-	 	min-width: 300px;
-	 	width: 300px;
-	 	word-wrap: normal;
-	 	overflow: auto;
-	 }
-	 table thead tr th:nth-child(5),
-	 table thead tr th:nth-child(6),
-	 table tbody tr td:nth-child(5),
-	 table tbody tr td:nth-child(6){
-	 	display: none;
-	 }
-	 table tbody tr td {
-	 	padding: 1%;
-	 }*/
-
-	 /* Force table to not be like tables anymore */
-	 	body {
-	 		display: flex;
-	 	}
-
-	 	.table-container {
-	 		min-width: 85%;
-	 		max-width: 85%;
-	 	}
-	 	table {
-	 		overflow-x: hidden;
-	 		width: 100% !important;
-	 		border: 1px solid rgba(110,205,102,1);
-	 		margin-left: 5px;
-	 	}
-	 	input {
-	 		width: 85%;
-			margin-left: 5px;
-	 	}
-		table, thead, tbody, th, td, tr {
-			display: block;
-			width: 100%;
-		}
-
-		/* Hide table headers (but not display: none;, for accessibility) */
-		thead tr {
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
-
-	    tr {
-	      margin: 0 0 5px 0;
-	      border: none;
-	    }
-	    table tbody tr:nth-child(odd) {
-		 	background: #F0F0F0;
-			border:none;
-		 	color: #000;
-		}
-
-	      
-	    tr:nth-child(odd) {
-	      background: #ccc;
-	    }
-    
-		td {
-			/* Behave  like a "row" */
-			border: none;
-			border-bottom: 1px solid #eee;
-			position: relative;
-			padding-left: 20%;
-		}
-
-		td:before {
-			position: absolute;
-			left: 6px;
-			width: 40%;
-			padding-right: 10px;
-			white-space: nowrap;
-		}
-
-		.notif {
-			display: none;
-		}
-
-		td:nth-of-type(1):before { content: "Name"; }
-		td:nth-of-type(2):before { content: "Area"; }
-		td:nth-of-type(3):before { content: "Flag"; }
-		td:nth-of-type(4):before { content: "Population"; }
-		td:nth-of-type(5):before { content: "Borders"; }
-		td:nth-of-type(6):before { content: "Alpha Code"; }
-		td:nth-of-type(7):before { content: "Capital"; }
-		td:nth-of-type(8):before { content: "Timezones"; }
-		td:nth-of-type(9):before { content: "Native Name"; }
-
-		.favList {
-			width: 10%;
-			cursor: pointer;
-		}
-		
+	table {
+		overflow-x: hidden;
+		width: 100% !important;
+		border: 1px solid rgba(110,205,102,1);
+		margin-left: 5px;
+	}
+	input {
+		width: 85%;
+		margin-left: 5px;
+	}
+	table, thead, tbody, th, td, tr {
+		display: block;
+		width: 100%;
+	}
+	/* Hide table headers (but not display: none;
+	, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	tr {
+		margin: 0 0 5px 0;
+		border: none;
+	}
+	table tbody tr:nth-child(odd) {
+		background: #F0F0F0;
+		border:none;
+		color: #000;
+	}
+	tr:nth-child(odd) {
+		background: #ccc;
+	}
+	td {
+		/* Behave like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 20%;
+	}
+	td:before {
+		position: absolute;
+		left: 6px;
+		width: 40%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	.notif {
+		display: none;
+	}
+	td:nth-of-type(1):before {
+		content: "Name";
+	}
+	td:nth-of-type(2):before {
+		content: "Area";
+	}
+	td:nth-of-type(3):before {
+		content: "Flag";
+	}
+	td:nth-of-type(4):before {
+		content: "Population";
+	}
+	td:nth-of-type(5):before {
+		content: "Borders";
+	}
+	td:nth-of-type(6):before {
+		content: "Alpha Code";
+	}
+	td:nth-of-type(7):before {
+		content: "Capital";
+	}
+	td:nth-of-type(8):before {
+		content: "Timezones";
+	}
+	td:nth-of-type(9):before {
+		content: "Native Name";
+	}
+	.favList {
+		width: 10%;
+		cursor: pointer;
+	}
 }
