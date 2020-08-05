@@ -1,4 +1,6 @@
 let urlEnding = "all"
+setTimeout(function () {document.querySelector('.notif').remove()}, 2000)
+
 function getCountries(){
 	let input = document.querySelector('input')
 	if(input.value != "" && typeof input.value == "string"){
@@ -78,6 +80,9 @@ function getCountries(){
 	  		
 	  			if(e.borders.length >= 9) {
 	  				borders = document.createTextNode(e.borders.slice(0,9)+" ...")
+	  			}
+	  			else if(window.innerWidth < 480) {
+	  				borders = document.createTextNode(e.borders.slice(0,3)+" ...")
 	  			}
 	  			
 
@@ -199,6 +204,10 @@ function getFullInfo(elem) {
 	  			let region = document.createTextNode(e.region)
 	  			let subRegion = document.createTextNode(e.subregion)
 
+	  			if(window.innerWidth < 480) {
+	  				region = document.createTextNode(e.borders.slice(0,3)+" ...")
+	  				subRegion = document.createTextNode(e.alpha3Code)
+	  			}
 	  			let nativeName = document.createTextNode(e.nativeName)
 
 	  			let capital = document.createTextNode(e.capital)
@@ -210,9 +219,9 @@ function getFullInfo(elem) {
 	  			tr.append(td2)
 	  			tr.append(td3)
 	  			tr.append(td4)
-	  			tr.append(td7)
 	  			tr.append(td5)
-	  			tr.append(td6)		
+	  			tr.append(td6)
+	  			tr.append(td7)		
 	  			tr.append(td8)
 	  			tr.append(td9)
 
