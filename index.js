@@ -290,13 +290,21 @@ function getFullInfo(elem) {
 }
 function addToFav(numId) {
 	//First getting favorits to solve some bugs
-  favList = localStorage.getItem("getFavs");
-  favorites = JSON.parse(favList);
+	if(localStorage.getItem("getFavs")){
+	  favList = localStorage.getItem("getFavs");
+	  favorites = JSON.parse(favList);
 
-  favorites.push(mainCountries[numId]);
+	  favorites.push(mainCountries[numId]);
 
-  favJsoned = JSON.stringify(favorites);
-  localStorage.setItem("getFavs", favJsoned);
+	  favJsoned = JSON.stringify(favorites);
+	  localStorage.setItem("getFavs", favJsoned);
+	}
+	else {
+	  favorites.push(mainCountries[numId]);
+
+	  favJsoned = JSON.stringify(favorites);
+	  localStorage.setItem("getFavs", favJsoned);
+	}
 }
 function favoriteRender() {
 	//id is given to get & delete element from favorites
