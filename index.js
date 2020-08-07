@@ -24,6 +24,9 @@ function getCountries() {
   } 
   else {
     urlEnding = "all";
+
+    inpVal = JSON.stringify(input.value);
+  	localStorage.setItem("getInp", inpVal);
   }
   //fetching
   fetch(`https://restcountries.eu/rest/v2/${urlEnding}`)
@@ -320,7 +323,7 @@ function favoriteRender() {
 	//it will not create a bug cause I render every time 
 	//after deleting & I give new id-s
   let favId = 0;
-
+  
   favList = localStorage.getItem("getFavs");
   favorites = JSON.parse(favList);
 
