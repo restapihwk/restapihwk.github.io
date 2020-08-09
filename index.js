@@ -8,8 +8,10 @@ setTimeout(function () {
 }, 4000);
 
 let urlEnding = "all"; 
-if(localStorage.getItem("getInp")) {
-  	document.querySelector("input").value = JSON.parse(localStorage.getItem("getInp"));
+if(document.body.contains(document.querySelector("input"))){
+	if(localStorage.getItem("getInp")) {
+		document.querySelector("input").value = JSON.parse(localStorage.getItem("getInp"));
+	}
 }
 function getCountries() {
 
