@@ -165,7 +165,9 @@ function getCountries() {
       );
     });
 }
-getCountries(); //To get all Info when entering to website 
+if(document.body.contains(document.querySelector("input"))){
+	getCountries(); //To get all Info when entering to website 
+}
 function getFullInfo(elem) {
   let urlFull = elem.innerText;
   fetch(`https://restcountries.eu/rest/v2/name/${urlFull}`)
